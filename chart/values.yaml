@@ -79,6 +79,9 @@ resources:
 
 nodeSelector: {}
 
+# -- additional labels to add to all resources
+additionalLabels: {}
+
 tolerations: []
 
 affinity:
