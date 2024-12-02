@@ -22,9 +22,8 @@ spec:
       annotations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-
       labels:
-        {{- include "druid-operator.labels" . | nindent 8 }}
+        {{- include "druid-operator.selectorLabels" . | nindent 8 }}
         control-plane: controller-manager
     spec:
       {{- with .Values.nodeSelector }}
